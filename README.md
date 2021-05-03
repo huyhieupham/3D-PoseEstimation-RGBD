@@ -1,32 +1,13 @@
-# Pose_3D
-Exploiting temporal information for 3D pose estimation
-
-This code is released for the paper  "Exploiting temporal information for 3D human pose estimation", accepted for ECCV 2018. https://arxiv.org/pdf/1711.08585.pdf
-
-Watch our demos: 
-1. https://www.youtube.com/watch?v=Cc2ficlalXE&feature=youtu.be
-2. https://www.youtube.com/watch?v=jbJNb0aoLYY&feature=youtu.be
-3. https://www.youtube.com/watch?v=MVeaen5vGxQ
-
-Please cite our work if you use this code. 
-
-### Dependencies
-
-* [h5py](http://www.h5py.org/)
-* [tensorflow](https://www.tensorflow.org/) 1.0 or later
 
 
 
 ### Training from the scratch
 
-#### Due to a bug in the evaluation section of our code (see [issue #3](https://github.com/rayat137/Pose_3D/issues/3)), our results should be approximately 58.5 mm for protocol 1 and 44 mm for protocol 2 (not 51.9mm and 42.0mm as reported in our paper). We sincerely apologize for our mistake in the code and thank Lin Jiahao (jiahao.lin@u.nus.edu) for letting us know of the bug.
 
-To train from the scratch use the command:
 
 `python temporal_3d.py --use_sh --camera_frame --dropout 0.5`
 
 Use the flag `--use_sh` if you want to use the stacked_hourglass detections. Otherwise omit the flag (for ground truth 2D). 
-
 
 
 ### Pre-trained model
@@ -65,9 +46,6 @@ To create a movie run the command:
 This will produce a set of visualizations this:
 
 ![Visualization example](/temporal_3d_release/output_results/00041_out.jpg)
-
-
-
 
 
 
