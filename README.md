@@ -1,8 +1,6 @@
-
-
+The main parts of this code were reproduced from "Exploiting temporal information for 3D human pose estimation - ECCV2018". 
 
 ### Training from the scratch
-
 
 
 `python temporal_3d.py --use_sh --camera_frame --dropout 0.5`
